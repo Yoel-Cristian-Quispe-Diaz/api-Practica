@@ -1,0 +1,222 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #333;
+  padding: 1em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+section {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+}
+/* ==============
+personajes
+============== */
+#personajes {
+    border: #161111 3px solid;
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: white;
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#personajes h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: serif;
+  color: #3d7dca;
+  text-wrap: wrap;
+}
+#personajesDB {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+.carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-item.active {
+  opacity: 1;
+}
+.carousel-item img {
+  max-height: 350px;
+}
+.carousel-item p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.carousel-button.prev {
+  left: 10px;
+}
+.carousel-button.next {
+  right: 10px;
+}
+
+/* =======
+ver mas
+====== */
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+/* ================
+ESTILOS PARA MI MODAL
+============= */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content {
+  background-image: radial-gradient(
+    circle at -2.83% 54.62%,
+    #ffffbc 0,
+    #fff19f 25%,
+    #beb582 50%,
+    #7e7b65 75%,
+    #939399 100%
+  );
+
+  margin: 5% auto;
+  padding: 20px;
+  border: 4px solid #161111;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#modalImage {
+  display: block;
+  margin: 0 auto 20px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+#modalDescription p {
+  margin: 10px 0;
+  line-height: 1.6;
+  font-size: 1.1em;
+  color: #555;
+}
+
+#modalDescription h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+#modalDescription strong {
+  color: #333;
+  font-weight: bold;
+}
+
+#modalDescription img {
+  display: block;
+  margin: 15px auto;
+  border-radius: 10px;
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#modalDescription {
+  background-color: rgba(236, 186, 145, 0.836);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
