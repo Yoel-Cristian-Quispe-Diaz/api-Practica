@@ -32,9 +32,7 @@ nav ul li a:hover {
   background-color: #555;
 }
 
-section {
-  padding: 20px;
-}
+
 
 h1 {
   font-size: 24px;
@@ -45,17 +43,43 @@ p {
   font-size: 16px;
   color: #666;
 }
+
+/* ========
+css para las secciones
+======== */
+
+
+#personajes {
+  border: #161111 3px solid;
+max-width: 90%;
+margin: 2rem auto;
+background-color: white;
+padding: 5px;
+box-shadow: 0 0 10px rgba(66, 63, 197, 0.842);
+background-color: #87c6e4b0;
+
+}
+
+#pokeApi {
+  border: #161111 3px solid;
+max-width: 90%;
+margin: 2rem auto;
+background-color: white;
+padding: 5px;
+box-shadow: 0 0 30px rgba(175, 92, 60, 0.479);
+background-color: #beb58277;
+
+}
+
+
+
+
+
+
 /* ==============
 personajes
 ============== */
-#personajes {
-    border: #161111 3px solid;
-  max-width: 800px;
-  margin: 2rem auto;
-  background-color: white;
-  padding: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+
 #personajes h1 {
   text-align: center;
   font-size: 50px;
@@ -115,13 +139,19 @@ personajes
 ver mas
 ====== */
 button {
-  background-color: #4caf50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
+  background-color:rgb(98, 196, 60);
+  padding: .5rem;
+  border-radius: 10px;
   cursor: pointer;
-  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .25);
+  transition: .2s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, .25);
 }
 
 
@@ -219,4 +249,14 @@ ESTILOS PARA MI MODAL
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+
+/* =======
+csss para el iframe
+===== */
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none; /* Elimina el borde si es necesario */
 }
