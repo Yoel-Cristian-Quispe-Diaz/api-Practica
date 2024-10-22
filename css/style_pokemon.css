@@ -64,6 +64,30 @@ button:hover {
     gap: 1rem;
 }
 
+
+/* .pokemon-todos .pokemon {
+    display: none; 
+}
+
+.pokemon-todos .pokemon.active {
+    display: block; 
+}
+
+#pagination button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#pagination button.disabled {
+    background-color: #d6d6d6;
+    cursor: not-allowed;
+}
+ */
+
 @media screen and (min-width: 470px) {
     .pokemon-todos {
         grid-template-columns: 1fr 1fr;
